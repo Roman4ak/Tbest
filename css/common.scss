@@ -1,0 +1,150 @@
+$sizes:("xxl":1600px, "xl":1200px, "l":992px, "m":768px, "sm":576px, "xsm":400px);
+
+@mixin media($minmax, $media) {
+
+    @each $size,
+    $resolution in $sizes {
+        @if $media==$size {
+            @media screen and (#{$minmax}-width: $resolution) {
+                @content;
+            }
+        }
+    }
+}
+
+$black:#171717;
+$purple:#62224C;
+$gray:#515351;
+$green:#3BAF2A;
+$dark_green:#2D951E;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Work Sans',
+        sans-serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+.h1 {
+    font-size: 56px;
+    color: $purple;
+    font-family: 'Nunito Sans',
+        sans-serif;
+}
+
+h2,
+.h2 {
+    font-size: 48px;
+    color: $purple;
+    font-family: 'Nunito Sans',
+        sans-serif;
+}
+
+h3,
+.h3 {
+    font-size: 40px;
+    color: $purple;
+    font-family: 'Nunito Sans',
+        sans-serif;
+}
+
+h4,
+.h4 {
+    font-size: 32px;
+    color: $purple;
+    font-family: 'Nunito Sans',
+        sans-serif;
+}
+
+h5,
+.h5 {
+    font-size: 24px;
+    color: $purple;
+    font-family: 'Nunito Sans',
+        sans-serif;
+}
+
+h6,
+.h6 {
+    font-size: 20px;
+    color: $purple;
+    font-family: 'Nunito Sans',
+        sans-serif;
+}
+
+@mixin button {
+    padding: 17px 40px;
+    text-align: center;
+    font-weight: 500;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    border-radius: 8px;
+    width: fit-content;
+
+}
+
+.green_btn {
+    @include button();
+    color: #fff;
+    background-color: $green;
+    border-color: $green;
+
+    @include media("max", "sm") {
+        font-size: 13px;
+    }
+
+    &:hover {
+        background-color: $dark_green;
+        border-color: $dark_green;
+    }
+}
+
+.border_btn {
+    @include button();
+    color: #fff;
+    border-color: $green;
+
+    &:hover {
+        background-color: $dark_green;
+        border-color: $dark_green;
+    }
+}
+
+.white_btn {
+    @include button();
+    border-color: #fff;
+    background-color: #fff;
+    color: $black;
+
+    &:hover {
+        opacity: .7;
+    }
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1280px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}

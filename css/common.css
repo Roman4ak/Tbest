@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+.h1 {
+  font-size: 56px;
+  color: #62224C;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h2,
+.h2 {
+  font-size: 48px;
+  color: #62224C;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h3,
+.h3 {
+  font-size: 40px;
+  color: #62224C;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h4,
+.h4 {
+  font-size: 32px;
+  color: #62224C;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h5,
+.h5 {
+  font-size: 24px;
+  color: #62224C;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h6,
+.h6 {
+  font-size: 20px;
+  color: #62224C;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.green_btn {
+  padding: 17px 40px;
+  text-align: center;
+  font-weight: 500;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  background-color: #3BAF2A;
+  border-color: #3BAF2A;
+}
+
+@media screen and (max-width: 576px) {
+  .green_btn {
+    font-size: 13px;
+  }
+}
+
+.green_btn:hover {
+  background-color: #2D951E;
+  border-color: #2D951E;
+}
+
+.border_btn {
+  padding: 17px 40px;
+  text-align: center;
+  font-weight: 500;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  border-color: #3BAF2A;
+}
+
+.border_btn:hover {
+  background-color: #2D951E;
+  border-color: #2D951E;
+}
+
+.white_btn {
+  padding: 17px 40px;
+  text-align: center;
+  font-weight: 500;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-color: #fff;
+  background-color: #fff;
+  color: #171717;
+}
+
+.white_btn:hover {
+  opacity: .7;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1280px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=common.css.map */
